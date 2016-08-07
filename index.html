@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<link style="text/css" href="./css/reset.css" rel="stylesheet"/>
+		<link style="text/css" href="./css/main.css" rel="stylesheet"/>		
+	</head>
+	<body>
+		<header>
+			<div class="head-top commonWidth">
+				<h3 class="left">欢迎来到我的家族</h3>
+				<button class="right" id="regist">注册</button>
+				<button class="right" id="login">登录</button>
+			</div>
+			<!--注册表单-->
+			<div class="bgColor" unselectable="on" id="bgColor"></div>
+			<div class="regist commonWidth">
+				<form id="formRegist" onsubmit="return submitTest();">
+					<div class="formInput">
+						<label>姓名</label>
+						<input type="text" id="uname" name="uname" required>
+						<span></span>
+					</div>
+					<div class="formInput" id="sex">
+						<label>性别</label>
+						<input type="radio" value="男" name="sex"/>男
+						<input type="radio" value="女" name="sex"/>女
+					</div>
+					<div class="formInput">
+						<label>邮箱</label>
+						<input type="emaill" id="email" required/>
+						<span></span>
+					</div>
+					<div class="formInput">
+						<label>出生日期</label>
+						<input type="date"/>
+					</div>
+					<div class="formInput">
+						<label>手机号</label>
+						<input type="text" id="phone"/>
+						<span></span>
+					</div>
+					<div class="formInput">
+						<label>密码</label>
+						<input type="password" name="pwd1" id="pwd1"/>
+						<span></span>
+					</div>
+					<div class="formInput">
+						<label>确认密码</label>
+						<input type="password" name="pwd2" id="pwd2"/>
+						<span></span>
+					</div>
+					<div class="formInput">
+						<label>家庭住址</label>
+						<input type="text"/>
+						<input type="text">
+					</div>
+					<div class="formInput">
+						<button>取消</button>
+						<button>确定</button>
+					</div>
+				</form>
+			</div>
+		</header>
+	</body>
+	<script type="text/javascript" src="./js/index.js"></script>
+</html>
