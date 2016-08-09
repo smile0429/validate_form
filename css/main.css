@@ -10,12 +10,12 @@ header button{
 	overflow:hidden;
 	padding:30px 100px;	
 }
-#formRegist{
+#formRegist, #formLogin{
   display:none;
   z-index:1000;
   position:absolute;
-  
 }
+
 .bgColor{
 	background:#000;
 	filter:alpha(opacity=10);
@@ -31,12 +31,12 @@ header button{
 	display:none;
 }
   /*×¢²á¿òµÄÖÆ×÷*/
- #formRegist input{
+ #formRegist input, #formLogin input{
 	border:solid 1px #bbb;
 	width:200px;
 	height:25px;
  }
-#formRegist label{
+#formRegist label, #formLogin label{
 	font-size:17px;
 }
 .formInput{
@@ -54,6 +54,6 @@ width:100px;
 text-align:right;
 margin-right:20px;
 }
-#formRegist button{
-	margin:15px 100px;
+#formRegist button, #formLogin button{
+	margin:15px 60px;
 }
